@@ -1,0 +1,108 @@
+.c {
+  position: relative;
+}
+
+.c-bg {
+  width: 20px;
+  height: 100%;
+  background-color: #227bab;
+  position: absolute;
+}
+
+.c-wrapper {
+  padding: 50px;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skills img {
+  width: 50px;
+  height: 100%;
+}
+
+.c-left {
+  flex: 1;
+}
+
+.c-left a {
+  color: inherit;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.c-left svg {
+  padding-right: 5px;
+}
+
+.c-left h1,
+.c-left a {
+  padding: 20px 0;
+}
+
+.c-title {
+  font-size: 60px;
+}
+
+.c-info-item {
+  display: flex;
+  align-items: center;
+  margin: 50px 0px;
+  font-weight: 300;
+  width: 70%;
+}
+
+.c-desc {
+  font-weight: 200;
+}
+
+.copy {
+  text-align: center;
+  padding: 10px;
+}
+
+.copy svg {
+  color: #22a9ab;
+  animation-name: rotate-logo;
+  animation-duration: 15.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  display: inline-block;
+  width: 20px;
+}
+
+@keyframes rotate-logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-wrapper {
+    flex-direction: column;
+    padding: 0px 50px;
+  }
+
+  .c-title {
+    font-size: 30px;
+  }
+
+  .c-info-item {
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  .c-desc {
+    display: none;
+  }
+
+  .skills img {
+    width: 20px;
+  }
+}
