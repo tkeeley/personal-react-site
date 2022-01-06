@@ -40,7 +40,7 @@
 
 .c-left h1,
 .c-left a {
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .c-title {
@@ -66,20 +66,30 @@
 
 .copy svg {
   color: #22a9ab;
-  animation-name: rotate-logo;
-  animation-duration: 15.5s;
-  animation-iteration-count: infinite;
+  animation: rotate-logo 8s infinite;
+  -webkit-animation: rotate-logo 8s infinite;
+  -moz-animation: rotate-logo 8s infinite;
   transform-origin: 50% 50%;
   display: inline-block;
   width: 20px;
 }
 
+.react-img {
+  animation: rotate-logo 8s infinite;
+  -webkit-animation: rotate-logo 8s infinite;
+  -moz-animation: rotate-logo 8s infinite;
+}
+
 @keyframes rotate-logo {
   0% {
     transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
   }
 }
 

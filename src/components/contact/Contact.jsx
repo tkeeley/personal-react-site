@@ -21,7 +21,7 @@ const Contact = () => {
           <img src={Js} alt="js" />
           <img src={Php} alt="php" />
           <img src={Wp} alt="wp" />
-          <img src={ReactLogo} alt="react" />
+          <img className="react-img" src={ReactLogo} alt="react" />
           <img src={Svelte} alt="svelte" />
         </div>
         <div className="c-left">
@@ -31,7 +31,7 @@ const Contact = () => {
       </div>
       <p className="copy">
       &#169; {new Date().getFullYear()} Tim Keeley<br/>
-      Website build on React <FontAwesomeIcon icon={faReact} />
+      Website built on React <FontAwesomeIcon icon={faReact} /> and caffeine ☕️
       </p> 
     </div>
   );

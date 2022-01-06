@@ -65,13 +65,14 @@
   font-style: italic;
   font-weight: 600;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .a-callout {
   margin-top: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .a-callout-texts {
@@ -111,7 +112,10 @@ a.ocnjlink {
     flex-direction: column;
   }
 
-  .a-card.bg,
+  .a-card.bg {
+    top: 10%;
+  }
+
   .a-award {
     display: none;
   }
