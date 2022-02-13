@@ -1,0 +1,118 @@
+.c {
+  position: relative;
+}
+
+.c-bg {
+  width: 20px;
+  height: 100%;
+  background-color: #227bab;
+  position: absolute;
+}
+
+.c-wrapper {
+  padding: 50px;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.skills img {
+  width: 50px;
+  height: 100%;
+}
+
+.c-left {
+  flex: 1;
+}
+
+.c-left a {
+  color: inherit;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.c-left svg {
+  padding-right: 5px;
+}
+
+.c-left h1,
+.c-left a {
+  padding: 20px;
+}
+
+.c-title {
+  font-size: 60px;
+}
+
+.c-info-item {
+  display: flex;
+  align-items: center;
+  margin: 50px 0px;
+  font-weight: 300;
+  width: 70%;
+}
+
+.c-desc {
+  font-weight: 200;
+}
+
+.copy {
+  text-align: center;
+  padding: 10px;
+}
+
+.copy svg {
+  color: #22a9ab;
+  animation: rotate-logo 8s infinite;
+  -webkit-animation: rotate-logo 8s infinite;
+  -moz-animation: rotate-logo 8s infinite;
+  transform-origin: 50% 50%;
+  display: inline-block;
+  width: 20px;
+}
+
+.react-img {
+  animation: rotate-logo 8s infinite;
+  -webkit-animation: rotate-logo 8s infinite;
+  -moz-animation: rotate-logo 8s infinite;
+}
+
+@keyframes rotate-logo {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-wrapper {
+    flex-direction: column;
+    padding: 0px 50px;
+  }
+
+  .c-title {
+    font-size: 30px;
+  }
+
+  .c-info-item {
+    margin: 20px 0px;
+    width: 100%;
+  }
+
+  .c-desc {
+    display: none;
+  }
+
+  .skills img {
+    width: 20px;
+  }
+}
